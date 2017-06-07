@@ -10,8 +10,7 @@ class NativeFacebookLoginHandler {
   constructor() {
     // include all fields from facebook
     // http://developers.facebook.com/docs/reference/login/public-profile-and-friend-list/
-    this._fields = ['id', 'email', 'name', 'first_name',
-      'last_name', 'link', 'gender', 'locale', 'age_range'];
+    this._fields = 'id,email,name,first_name,last_name,link,gender,locale,age_range';
     this._apiUri = "https://graph.facebook.com/v2.6/me";
   }
 
